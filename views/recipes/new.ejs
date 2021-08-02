@@ -1,0 +1,67 @@
+<% layout('layouts/boilerplate') %>
+<h1 class="text-center mb-3">Add A New Recipe </h1>
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card shadow">
+            <div class="card-body">
+                <form action="/recipes" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Recipe Name</label>
+                        <input type="text" class="form-control" name="recipe[name]" id="name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea name="recipe[description]" class="form-control" id="description" cols="30" rows="5"
+                            required></textarea>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Type of Meal</label>
+                        <select name="recipe[category]" class="form-select" id="category" required>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Brunch">Brunch</option>
+                            <option value="Snack">Snack</option>
+                            <option value="Dessert">Dessert</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Upload Images</label>
+                        <input class="form-control" name="image" type="file" id="image" multiple>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ingredients" class="form-label">Ingredients</label>
+                        <textarea name="recipe[ingredients]" class="form-control" id="ingredients" cols="30" rows="5"
+                            required></textarea>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="directions" class="form-label">Directions</label>
+                        <textarea name="recipe[directions]" class="form-control" id="directions" cols="30" rows="5"
+                            required></textarea>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <button class="btn btn-success">Add Recipe</button>
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <a class="btn btn-danger" href="/recipes">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
