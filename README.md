@@ -7,7 +7,7 @@ Demo Link: https://my-recipess-app.herokuapp.com/
 ## Technologies Used:
 - Express
 - NodeJS
-- MongoDB and Mongoose
+- MongoDB
 - EJS
 - Bootstrap
 - JavaScript
