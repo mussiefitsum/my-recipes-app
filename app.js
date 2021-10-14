@@ -16,6 +16,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const User = require('./models/user');
 const helmet = require('helmet');
 const MongoStore = require('connect-mongo');
+const secure = require('ssl-express-www');
 
 const recipeRoutes = require('./routes/recipes');
 const reviewRoutes = require('./routes/reviews');
@@ -76,6 +77,7 @@ app.use(session(sessionConfig));
 app.use(flash());
 app.use(mongoSanitize());
 app.use(helmet());
+app.use(secure);
 
 const scriptSrcUrls = [
     "https://stackpath.bootstrapcdn.com/",
