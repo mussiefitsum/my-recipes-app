@@ -2,7 +2,7 @@
 ## Description:
 MyRecipes is my first web app that allows users to view and share recipes with each other. 
 
-Demo Link: https://my-recipess-app.herokuapp.com/
+Demo Link: https://my-recipes.onrender.com/
 
 ## Technologies Used:
 - Express
