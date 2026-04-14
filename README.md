@@ -2,7 +2,7 @@
 ## Description:
 MyRecipes is my first web app that allows users to view and share recipes with each other. 
 
-Demo Link: https://my-recipes.onrender.com/
+Demo Link: https://my-recipes-app.up.railway.app/
 
 ## Technologies Used:
 - Express
